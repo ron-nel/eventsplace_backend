@@ -24,10 +24,6 @@ app.use('/admin', register);
 const authRouter = require("./routes/auth");
 app.use('/admin', authRouter);
 
-
-const post_routes = require("./routes/post_routes");
-app.use('/admin', post_routes);
-
 const room_routes = require("./routes/room_routes");
 app.use('/admin', room_routes);
 
