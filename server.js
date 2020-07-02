@@ -5,7 +5,7 @@ const passport = require("passport");
 require("passport");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const databaseUrl = process.env.DATABASE_URL || 'mongodb+srv://ronnel:ronnelMongoDB2019@cluster0-g1fen.mongodb.net/test?retryWrites=true&w=majority';
+const databaseUrl = process.env.DATABASE_URL;
 const cors = require('cors');
 //databse conection
 mongoose.connect(databaseUrl, {useNewUrlParser:true});
